@@ -37,6 +37,7 @@ px4_add_module(
 		module.cpp
 		px4_getopt.c
 		shutdown.cpp
+		board_identity.c
 	DEPENDS
 		prebuild_targets
 		uorb_headers
