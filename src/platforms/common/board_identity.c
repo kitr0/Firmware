@@ -51,6 +51,7 @@
 #include <stdio.h>
 #include <string.h>
 
+#if defined(BOARD_OVERRIDE_UUID)
 static const uint16_t soc_arch_id = PX4_SOC_ARCH_ID;
 
 
@@ -133,3 +134,4 @@ int board_get_px4_guid_formated(char *format_buffer, int size)
 
 	return offset;
 }
+#endif
